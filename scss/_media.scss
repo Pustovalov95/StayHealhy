@@ -1,0 +1,466 @@
+@media (max-width: 1199px) {
+    .container {
+        width: 960px;
+    }
+    .about__title-item {
+        &::before {
+            left: 20%;
+        }
+        &::after {
+            right: 20%;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        width: 720px;
+    }
+    .header {
+        padding-top: 17px;
+        &__navbar {
+            &-logo {
+                font-size: 18px;
+            }
+            &-item {
+                font-size: 12px;
+            }
+        }
+    }
+    .promo {
+        &-title {
+            font-size: 52px;
+        }
+    }
+
+    .programs {
+        .carousel {
+            &__item {
+                img {
+                    height: 200px;
+                }
+                &-title {
+                    font-size: 28px;
+                }
+
+                &-link {
+                    img {
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    .nutrions {
+        margin-top: 100px;
+        &__left {
+            &-discipline {
+                width: 160px;
+                height: 40px;
+                font-size: 14px;
+            }
+            &-rightImg {
+                width: 75%;
+                img {
+                    width: 100%;
+                }
+            }
+            &-leftImg {
+                width: 75%;
+                img {
+                    width: 100%;
+                }
+            }
+            &-eating {
+                top: 333px;
+                width: 160px;
+                height: 40px;
+                font-size: 14px;
+            }
+        }
+        &__right {
+            &-head {
+                margin-top: 0;
+            }
+            &-title {
+                font-size: 28px;
+            }
+            &-description {
+                font-size: 14px;
+            }
+        }
+    }
+    .pricing {
+        margin-top: 100px;
+        padding-top: 50px;
+        &-title {
+            font-size: 35px;
+        }
+        &__tub {
+            min-height: 640px;
+            &-description {
+                width: 85%;
+            }
+            &-price {
+                margin-top: 100px;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .about {
+        padding-top: 330px;
+        &__title {
+            &-item {
+                &::before {
+                    left: 12%;
+                }
+                &::after {
+                    right: 12%;
+                }
+            }
+        }
+    }
+
+    .subscrybe {
+        margin-top: 100px;
+        &__left {
+            padding: 60px 20px;
+            &-title {
+                font-size: 33px;
+            }
+            .wrapper {
+                align-items: center;
+            }
+        }
+        &__right {
+            padding: 40px 20px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 540px;
+    }
+    .header {
+        height: auto;
+        &__navbar {
+            flex-wrap: wrap;
+            &-logo {
+                width: 33%;
+            }
+            ul {
+                width: 60%;
+            }
+        }
+    }
+    .promo {
+        padding-top: 110px;
+        &-welcome {
+            font-size: 12px;
+        }
+        &-title {
+            font-size: 32px;
+        }
+        &-subtitle {
+            font-size: 13px;
+        }
+        &-wrapper {
+            margin-top: 0;
+        }
+    }
+    .programs {
+        .carousel {
+            margin-top: 20px;
+        }
+        &-head {
+            margin-top: 50px;
+        }
+        &-title {
+            font-size: 25px;
+        }
+        .carousel {
+            &__item {
+                &-img {
+                    height: 150px;
+                    img {
+                        height: 100%;
+                    }
+                }
+                &-title {
+                    font-size: 18px;
+                }
+                &-sub {
+                    font-size: 11px;
+                }
+                &-link {
+                    a {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    .nutrions {
+        margin-top: 50px;
+        &__left {
+            margin-top: 30px;
+            &-leftImg {
+                top: 120px;
+            }
+            &-eating {
+                top: 202px;
+            }
+        }
+        &__right {
+            &-head {
+                font-size: 12px;
+            }
+            &-title {
+                font-size: 20px;
+            }
+            &-description {
+                font-size: 12px;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .pricing {
+        margin-top: 50px;
+        &__tub {
+            min-height: 480px;
+            &-title {
+                font-size: 20px;
+            }
+            &-name {
+                font-size: 15px;
+            }
+            &-description {
+                ul {
+                    .item {
+                        font-size: 12px;
+                    }
+                }
+            }
+            &-price {
+                margin-top: 0;
+                font-size: 16px;
+                span {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .about {
+        padding-top: 200px;
+        &-head {
+            font-size: 12px;
+        }
+        &__title {
+            &-item {
+                font-size: 28px;
+            }
+        }
+        &__itemTop {
+            &-top {
+                font-size: 36px;
+            }
+            &-bottom {
+                font-size: 14px;
+            }
+        }
+        &-wrapperBottom {
+            flex-direction: column;
+        }
+        &__itemBottom {
+            width: 100%;
+        }
+    }
+
+    .subscrybe {
+        margin-top: 50px;
+        &__left {
+            padding: 40px 20px;
+            width: 45%;
+            &-title {
+                font-size: 26px;
+            }
+            .wrapper {
+                flex-direction: column;
+            }
+            &-input {
+                width: 220px;
+                margin-right: 0;
+            }
+        }
+        &__right {
+            width: 50%;
+            .wrapper-left {
+                margin-right: 20px;
+            }
+            &-item {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .footer {
+        margin-top: 0;
+        &-wrapper {
+            flex-wrap: wrap;
+        }
+        &__left {
+            margin-bottom: 20px;
+            padding-left: 38px;
+            width: 45%;
+            &-title {
+                font-size: 18px;
+            }
+            &-description {
+                font-size: 9px;
+            }
+        }
+        &__right {
+            margin-bottom: 20px;
+            width: 45%;
+            &-title {
+                font-size: 14px;
+            }
+            &-item {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .container {
+        width: 95vw;
+        padding: 0 10px;
+    }
+    .header {
+        &__navbar {
+            
+            .menu {
+                display: none;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: column;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100vh;
+                background-color: rgba(0, 0, 0, 0.7)
+            }
+            &-item {
+                font-size: 22px;
+            }
+            &-burger {
+                position: relative;
+                display: block;
+                height: 50px;
+                width: 50px;
+                cursor: pointer;
+                span {
+                    display: block;
+                    margin: 0 auto;
+                    margin-top: 24px;
+                    height: 2px;
+                    width: 40px;
+                    background-color: #fff;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 40px;
+                        top: 14px;
+                        height: 2px;
+                        background-color: #fff;
+                        transition: 0.5s;
+                    }
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 40px;
+                        bottom: 14px;
+                        left: 5px;
+                        height: 2px;
+                        background-color: #fff;
+                        transition: 0.5s;
+                    }
+                }
+                
+            }
+            .active {
+                display: flex;
+
+                span {
+                    height: 0;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 40px;
+                        transform: rotate(45deg);
+                        top: 26px;
+                        height: 2px;
+                        background-color: #fff;
+                        transition: 0.5s;
+                    }
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 40px;
+                        transform: rotate(-45deg);
+                        bottom: 22px;
+                        left: 5px;
+                        height: 2px;
+                        background-color: #fff;
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+    }
+    .programs {
+        .carousel {
+            slick-slide {
+                display: block;
+                margin: 0 auto;
+            }
+            &__item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &-description {
+                    max-width: 210px;
+                }
+            }
+        }
+    }
+    .nutrions {
+        &__left {
+            margin-top: 60px;
+            height: 180px;
+            &-discipline {
+                width: 140px;
+                height: 35px;
+            }
+            &-leftImg {
+                bottom: 0px;
+            }
+            &-eating {
+                bottom: 0px;
+            }
+        }
+        &__right {
+            width: 46%;
+        }
+    }
+}
