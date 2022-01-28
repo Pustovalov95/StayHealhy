@@ -28,6 +28,10 @@
             font-size: 24px;
             font-weight: 800;
             line-height: 0;
+            h1 {
+                width: 100%;
+                height: auto;
+            }
         }
         ul {
             display: flex;
@@ -184,6 +188,7 @@
     &__left {
         position: relative;
         width: 52%;
+        height: 500px;
         &-discipline {
             position: absolute;
             display: flex;
@@ -204,20 +209,26 @@
         }
         &-rightImg {
             position: absolute;
+            width: 90%;
             right: 0;
             img {
-               border-radius: 10px;
+                width: 100%;
+                border-radius: 10px;
             }
         }
         &-leftImg {
+            
             position: absolute;
-            top: 210px;
+            bottom: 0px;
+            img {
+                width: 90%;
+            }
         }
         &-eating {
             position: absolute;
             z-index: 4;
             right: 0;
-            top: 424px;
+            bottom: 0px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -493,9 +504,6 @@
             margin-top: 30px;
             display: flex;
         }
-        .btn__join {
-            margin-top: 30px;
-        }
         &-input {
             width: 283px;
             height: 53px;
@@ -566,14 +574,16 @@
             display: flex;
             margin-top: 10px;
             .item {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 40px;
-                height: 40px;
-                background: #F3F3F3;
-                border-radius: 100%;
-                margin-right: 10px;
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 40px;
+                    height: 40px;
+                    background: #F3F3F3;
+                    border-radius: 100%;
+                    margin-right: 10px;
+                }
             }
         }
     }
@@ -582,16 +592,23 @@
         flex-direction: column;
         &-title {
             list-style-type: none;
-            font-weight: 500;
-            font-size: 18px;
             margin-bottom: 20px;
-            color:  #161D2F;
+            a {
+                font-weight: 500;
+                font-size: 18px;
+                color:  #161D2F;
+                text-decoration: none;
+            }
         }
         &-item {
             list-style-type: none;
-            font-weight: 300;
-            font-size: 16px;
             margin-bottom: 10px;
+            a {
+                font-weight: 300;
+                font-size: 14px;
+                text-decoration: none;
+                color: #222222;
+            }
         }
     }
     &__copyright {

@@ -55,6 +55,7 @@
     .nutrions {
         margin-top: 100px;
         &__left {
+            height: 300px;
             &-discipline {
                 width: 160px;
                 height: 40px;
@@ -73,7 +74,7 @@
                 }
             }
             &-eating {
-                top: 333px;
+                bottom: 0px;
                 width: 160px;
                 height: 40px;
                 font-size: 14px;
@@ -208,11 +209,12 @@
         margin-top: 50px;
         &__left {
             margin-top: 30px;
+            height: 250px;
             &-leftImg {
-                top: 120px;
+                bottom: 0px;
             }
             &-eating {
-                top: 202px;
+                bottom: 0px;
             }
         }
         &__right {
@@ -346,9 +348,16 @@
         width: 95vw;
         padding: 0 10px;
     }
+    .fixed {
+        overflow: hidden;
+    }
     .header {
         &__navbar {
-            
+            &-logo {
+                text-align: center;
+                width: 100%;
+                margin-bottom: 10px;
+            }
             .menu {
                 display: none;
                 align-items: center;
@@ -358,7 +367,8 @@
                 top: 0;
                 width: 100%;
                 height: 100vh;
-                background-color: rgba(0, 0, 0, 0.7)
+                background-color: rgba(0, 0, 0, 0.7);
+                overflow: hidden;
             }
             &-item {
                 font-size: 22px;
@@ -400,7 +410,7 @@
             }
             .active {
                 display: flex;
-
+                overflow: hidden;
                 span {
                     height: 0;
                     &::before {
@@ -445,22 +455,184 @@
         }
     }
     .nutrions {
+        &-wrapper {
+            flex-direction: column;
+        }
         &__left {
+            width: 100%;
             margin-top: 60px;
-            height: 180px;
+            height: 320px;
             &-discipline {
                 width: 140px;
                 height: 35px;
             }
             &-leftImg {
                 bottom: 0px;
+                width: 70%;
             }
             &-eating {
                 bottom: 0px;
             }
         }
         &__right {
-            width: 46%;
+            margin-top: 50px;
+            width: 100%;
+        }
+    }
+    .pricing {
+        max-height: 2100px;
+        &-wrapper {
+            flex-direction: column;
+        }
+        &__tub {
+            padding: 10px 0px;
+            width: 100%;
+            margin-bottom: 20px;
+            &-title {
+                margin-top: 10px;
+                font-size: 26px;
+            }
+            &-image {
+                width: 60%;
+            }
+            &-name {
+                font-size: 20px;
+            }
+            &-description {
+                ul {
+                    .item {
+                        font-size: 16px;
+                    }
+                }
+            }
+            &-price {
+                margin-top: 40px;
+                font-size: 20px;
+                span {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .about {
+        &__title-item {
+            &::before {
+                left: 0;
+            }
+            &::after {
+                right: 0;
+            }
+        }
+    }
+    .subscrybe {
+        
+        &-wrapper {
+            flex-direction: column-reverse;
+            height: auto;
+        }
+        &__left {
+            width: 100%;
+            padding: 10px 0;
+            margin-top: 15px;
+            &-title {
+                display: block;
+                margin: 0 auto;
+                width: 70%;
+                text-align: center;
+            }
+            &-input {
+                width: 80%;
+            }
+        }
+        &__right {
+            width: 100%;
+            justify-content: center;
+            padding: 10px 0;
+            margin-top: 15px;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .nutrions {
+        &__left {
+            height: 244px;
+        }
+    }
+    .pricing {
+        max-height: 1800px;
+        &-wrapper {
+            flex-direction: column;
+        }
+        &__tub {
+            padding: 10px 0px;
+            width: 100%;
+            margin-bottom: 20px;
+            &-title {
+                margin-top: 10px;
+                font-size: 26px;
+            }
+            &-image {
+                width: 60%;
+            }
+            &-name {
+                font-size: 20px;
+            }
+            &-description {
+                ul {
+                    .item {
+                        font-size: 16px;
+                    }
+                }
+            }
+            &-price {
+                margin-top: 40px;
+                font-size: 20px;
+                span {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .about {
+        padding-top: 350px;
+        &__title {
+            width: 100%;
+            &-item {
+                width: 100%;
+                &::before {
+                    display: none;
+                }
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+    .subscrybe {
+        &__left {
+            padding: 20px 0;
+            &-title {
+                width: 90%;
+            }
+        }
+        &__right {
+            padding: 0px 10px;
+            &-item {
+                margin: 0;
+            }
+        }
+    }
+    .footer {
+        &__left {
+            padding-left: 0;
+            width: 50%;
+        }
+        &__right {
+            width: 50%;
+            ul {
+                padding: 0;
+            }
         }
     }
 }

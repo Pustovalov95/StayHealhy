@@ -27,11 +27,13 @@ $(document).ready(function(){
   });
 
   let   burger = document.querySelector('.header__navbar-burger'),
-        menu = document.querySelector('.menu');
+        menu = document.querySelector('.menu'),
+        body = document.querySelector('body');
 
     function ToggleMenu() {
         menu.classList.toggle('active');
         burger.classList.toggle('active');
+        body.classList.toggle('fixed');
     }
 
 
